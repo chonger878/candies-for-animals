@@ -1,18 +1,21 @@
 import './App.css';
+import { Link} from "react-router-dom";
 
 function App() {
+  const submit = (e) => {e.preventDefault();
+    alert('Thank you for supporting our shelter animals!');
+  };
   return (
-    <div className="App">
+  <div className="App">
         <p>
           Candies 4 Animals!
         </p>
         <p>
           There's nothing more scarier than a pet waiting for a forever home
-          might never welcome them...and an overcrowded shelter. 
-          This halloween, turn your unwanted candy into hope for these animals.
+          in an overcrowded shelter. This halloween, turn your unwanted candy into hope for these animals.
         </p>
-        <p>First time user?</p>
-      <form>
+        <p>First time user? Please weigh your candy and enter it in pounds</p>
+      <form onSubmit={submit}>
       <input
         type="text"
         placeholder="Enter username"
@@ -30,7 +33,7 @@ function App() {
       <br />
       <button>SUBMIT</button>
     </form>
-    </div>
+  </div>
   );
 }
 
