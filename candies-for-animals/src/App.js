@@ -1,23 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Candies 4 Animals!
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <p>
+          There's nothing more scarier than a pet waiting for a forever home
+          might never welcome them...and an overcrowded shelter. 
+          This halloween, turn your unwanted candy into hope for these animals.
+        </p>
+        <p>First time user?</p>
+      <form>
+      <input
+        type="text"
+        placeholder="Enter username"
+      />
+      <br />
+      <input 
+        type="text"
+        placeholder="Enter name"
+      />
+      <br />
+      <input
+        type="text"
+        placeholder="Amount of candy"
+      />
+      <br />
+      <button>SUBMIT</button>
+    </form>
     </div>
   );
 }
