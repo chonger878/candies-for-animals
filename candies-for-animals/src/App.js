@@ -1,7 +1,15 @@
 import './App.css';
 import { Link} from "react-router-dom";
 
-function App() {
+function home() {
+  <div>
+    <nav>
+      <Link to='/returninguser'>Returning user?</Link>
+      <Link to='/faqs'>FAQ</Link>
+    </nav>
+
+  </div>
+  /** 
   const submit = (e) => {e.preventDefault();
     alert('Thank you for supporting our shelter animals!');
   };
@@ -35,6 +43,15 @@ function App() {
     </form>
   </div>
   );
+  */
+}
+
+export function returningUser(){
+
+}
+
+export function faQS(){
+
 }
 
 export default App;
