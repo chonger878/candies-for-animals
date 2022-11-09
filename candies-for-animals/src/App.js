@@ -9,6 +9,7 @@ function Home() {
       <Link to='/faqs'>FAQ</Link>
     </nav>
     <h1>Candies for Animals</h1>
+    <p>First time user? Please weigh your candy and enter it in pounds</p>
   </div>
   );
   /** 
@@ -23,8 +24,6 @@ function Home() {
         <p>
           There's nothing more scarier than a pet waiting for a forever home
           in an overcrowded shelter. This halloween, turn your unwanted candy into hope for these animals.
-        </p>
-        <p>First time user? Please weigh your candy and enter it in pounds</p>
       <form onSubmit={submit}>
       <input
         type="text"
