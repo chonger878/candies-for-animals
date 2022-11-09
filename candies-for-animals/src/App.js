@@ -1,14 +1,16 @@
 import './App.css';
-import { Link} from "react-router-dom";
+import { Link } from "react-router-dom";
 
-function home() {
+function Home() {
+  return (
   <div>
     <nav>
       <Link to='/returninguser'>Returning user?</Link>
       <Link to='/faqs'>FAQ</Link>
     </nav>
-
+    <h1>Candies for Animals</h1>
   </div>
+  );
   /** 
   const submit = (e) => {e.preventDefault();
     alert('Thank you for supporting our shelter animals!');
@@ -46,12 +48,32 @@ function home() {
   */
 }
 
-export function returningUser(){
+export function ReturningUser(){
+  return( 
+  <div>
+    <nav>
+      <Link to='/'>Home</Link>
+      <Link to='/faqs'>FAQ</Link>
+    </nav>
+    <h1>Returning user login</h1>
+  </div>);
+  
 
 }
 
-export function faQS(){
+export function FaQS(){
+  return(   
+  <div>
+    <nav>
+      <Link to='/returninguser'>Returning user?</Link>
+      <Link to='/'>Home</Link>
+    </nav>
+    <h1>Frequently Asked Questions</h1>
+  </div>
+  );
 
 }
 
-export default App;
+export function App() {
+  return <Home />;
+}
