@@ -73,6 +73,18 @@ export function ReturningUser(){
       <Link to='/faqs'>FAQ</Link>
     </nav>
     <h1>Returning user login</h1>
+    <form>
+      <p>Welcome back! Enter your username and candy weight below:</p>
+      <input
+        type="text"
+        placeholder="Enter username"
+      />
+      <input
+        type="text"
+        placeholder="Amount of candy"
+      />
+      <button>SUBMIT</button>
+    </form>
   </div>);
   
 
