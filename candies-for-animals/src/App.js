@@ -86,6 +86,9 @@ export function FaQS(){
       <Link to='/'>Home</Link>
     </nav>
     <h1>Frequently Asked Questions</h1>
+    <p>1. Why do you do this?</p>
+    <p> There's nothing more scarier than a pet waiting for a forever home
+        in an overcrowded shelter. This halloween, turn your unwanted candy into hope for these animals.</p>
   </div>
   );
 
