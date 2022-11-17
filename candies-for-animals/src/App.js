@@ -2,6 +2,9 @@ import './App.css';
 import { Link } from "react-router-dom";
 
 function Home() {
+  const submit = (e) => {e.preventDefault();
+    alert('Thank you for supporting our shelter animals!');
+  };
   return (
   <div>
     <nav>
@@ -10,12 +13,27 @@ function Home() {
     </nav>
     <h1>Candies for Animals</h1>
     <p>First time user? Please weigh your candy and enter it in pounds</p>
+    <form onSubmit={submit}>
+      <input
+        type="text"
+        placeholder="Enter username"
+      />
+      <br />
+      <input 
+        type="text"
+        placeholder="Enter name"
+      />
+      <br />
+      <input
+        type="text"
+        placeholder="Amount of candy"
+      />
+      <br />
+      <button>SUBMIT</button>
+    </form>
   </div>
   );
   /** 
-  const submit = (e) => {e.preventDefault();
-    alert('Thank you for supporting our shelter animals!');
-  };
   return (
   <div className="App">
         <p>
